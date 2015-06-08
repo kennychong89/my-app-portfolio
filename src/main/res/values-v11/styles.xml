@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="CustomTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="android:buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/light_blue</item>
+
+        <!-- Support library compatability -->
+        <item name="background">@color/light_blue</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button_custom</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
